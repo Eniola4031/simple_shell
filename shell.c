@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * main(): This function is the entry point for the simple_shell program.
+ * main -  This function is the entry point for the simple_shell program.
  * It prompts the user for a command, executes it, and handles errors.
+ *
+ * Description: Display a prompt
  *
  * Return: always zero
  */
@@ -21,7 +23,7 @@
 				continue;
 			line[strlen(line) - 1] = '\0';  /* Remove the newline character */
 			if (system(line) != 0)
-				printf("Command not found\n")
+				printf("Command not found\n");
 		}
 		return (0);
 }
