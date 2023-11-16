@@ -1,12 +1,18 @@
-#ifndef SHELL_H
-#define SHELL_H
+#ifndef MAIN_H
+#define MAIN_H
+
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdbool.h>
+#include <unistd.h>
+#include <sys/wait.h>
 
-#define MAX_LINE_LENGTH 1024
-
+void dis_prmpt(void);
+void com_arg(const char *message);
+void rd_cmd(char *command, size_t size);
+void exe_cmd(const char *command);
 int main(void);
 
-#endif /* SHELL_H */
+#endif
