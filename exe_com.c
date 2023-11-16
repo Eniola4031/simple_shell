@@ -24,10 +24,10 @@ void exe_cmd(const char *command) {
         execvp(args[0], args);
 
         /* If execvp fails, print an error message */
-        com_arg("Error executing command.\n");
+        com_arg("Error, Execution failed.\n");
         exit(EXIT_FAILURE);
     } else {
-        /* Parent process */
+        /*i Parent process */
         wait(NULL);
     }
 }

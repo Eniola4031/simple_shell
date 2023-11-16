@@ -9,10 +9,12 @@
 #include <unistd.h>
 #include <sys/wait.h>
 
+
+int main(void);
 void dis_prmpt(void);
 void com_arg(const char *message);
 void rd_cmd(char *command, size_t size);
 void exe_cmd(const char *command);
-int main(void);
+
 
 #endif

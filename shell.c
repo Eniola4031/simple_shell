@@ -3,14 +3,15 @@
 /*
  * main - Code entry point
  *
- * Description: This file prompts and execute shell commands
+ * Description: main file for prompt
  *
- * Return: returns zero(sucess)
+ * Return: returns 0 (sucess)
  */
-	int main(void)
+int main(void)
 {
 	char command[120];
-	while (true)
+		
+	while(true)
 	{
 		dis_prmpt();
 		rd_cmd(command, sizeof(command));
