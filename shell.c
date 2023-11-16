@@ -1,6 +1,6 @@
 #include "main.h"
 
-/*
+/**
  * main - Code entry point
  *
  * Description: main file for prompt
@@ -10,13 +10,12 @@
 int main(void)
 {
 	char command[120];
-		
-	while(true)
+
+	while (true)
 	{
 		dis_prmpt();
 		rd_cmd(command, sizeof(command));
 		exe_cmd(command);
 	}
-
 	return (0);
 }
