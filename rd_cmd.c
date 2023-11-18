@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+ * main - Code entry point
+ *
+ * Description: main file for prompt
+ *
+ */
 void rd_cmd(char *command, size_t size)
 {
 	if (fgets(command, size, stdin) == NULL)

@@ -1,5 +1,11 @@
 #include "main.h"
 
+/**
+ * main - Code entry point
+ *
+ * Description: main file for prompt
+ *
+ */
 void exe_cmd(const char *command)
 {
 	pid_t child_pid = fork();

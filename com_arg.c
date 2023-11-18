@@ -2,7 +2,6 @@
 
 /**
  * com_arg - char message
- *
  * Description: ooutpu user input
  */
 
